@@ -1,0 +1,97 @@
+@keyframes rotation
+  from
+    transform: rotate(0deg);
+  to
+    transform: rotate(359deg);
+.player-component
+  line-height: 2;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+  .tomylist
+    padding-bottom: 20px;
+    color: #888;
+    text-decoration: none;
+    font-size: 0.8em;
+  .tomylist:hover
+    color: #ffa500;
+  .Player
+    max-width: 360px;
+    width: 100%;
+    background-color #fff;
+    box-shadow: 0 0 10px #ddd;
+    padding: 20px 0;
+    margin: 0 auto;
+    .musicPlaying
+      animation: rotation 30s linear infinite;
+    .musicImg
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #777;
+    .musicTitle
+      text-align: center;
+      font-weight: 400;
+    .timectrl
+      width: 300px;
+      margin: 0 auto;
+      overflow: auto;
+      margin-top: 10px;
+      .time
+        font-size: 0.7em;
+        float: right;
+        color: #777;
+    .progress
+      width: 300px;
+      background-color #eee;
+      height: 3px;
+      margin: 20px auto;
+      margin-top: 0px;
+      cursor: pointer;
+    .progress div
+      height: 100%;
+      background-color: #ffa500;
+    .setting
+      color: #777;
+      margin: 5px auto;
+      width: 300px;
+      text-align: center;
+      overflow: auto;
+      .modelctrl
+        float: right;
+        cursor: pointer;
+      .modelctrl:hover
+        color: #000;
+      .volctrl
+        float: left;
+        cursor: pointer;
+        .sound
+          width: 0px;
+          background-color #eee;
+          height: 3px;
+          cursor: pointer;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 5px;
+          transition: all 0.5s;
+          span
+            width: 50%;
+            height: 100%;
+            background-color #888;
+            display: block;
+      .volctrl:hover
+        color: #000;
+        .sound
+          width: 70px;
+    .controller
+      text-align: center;
+      .play
+        width: 25px;
+      span
+        margin: 0 40px;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+      span:hover
+        color: #ffa500;
