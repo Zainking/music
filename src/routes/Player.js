@@ -31,6 +31,7 @@ class PlayerComponent extends React.Component {
       case 0: this.props.prevMusic();break;
       case 1: this.props.toRandom(e, this.props.total);break;
       case 2: this.props.replay();break;
+      default: return;
     }
   }
   nextMusic=(e)=>{
@@ -38,6 +39,7 @@ class PlayerComponent extends React.Component {
       case 0: this.props.nextMusic();break;
       case 1: this.props.toRandom(e, this.props.total);break;
       case 2: this.props.replay();break;
+      default: return;
     }
   }
   render(){
@@ -47,7 +49,7 @@ class PlayerComponent extends React.Component {
         <Link to='/list' className='tomylist'>查看我的音乐列表 &gt;</Link>
         <div className='Player'>
         <h3 className='musicTitle'>{currentMusic.title} - {currentMusic.artist}</h3>
-        <img src={currentMusic.imgurl} className={`musicImg ${this.props.isPlaying?'musicPlaying':''}`}></img>
+        <img alt="musicImg" src={currentMusic.imgurl} className={`musicImg ${this.props.isPlaying?'musicPlaying':''}`}></img>
         <div className='setting'>
           <div className='modelctrl'>
             <FontAwesome name={`${this.switchMode(this.props.mode)}`} className='model' onClick={this.props.switchMode}/>

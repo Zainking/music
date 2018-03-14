@@ -23,6 +23,7 @@ class MusicComponent extends React.Component{
         case 0: this.props.nextMusic();break;
         case 1: this.props.toRandom(e, this.props.total);break;
         case 2: this.props.replay();break;
+        default: return;
       }
     })
     $('#player').on($.jPlayer.event.timeupdate, (e) => {
@@ -30,7 +31,7 @@ class MusicComponent extends React.Component{
       const currentTime = e.jPlayer.status.currentTime;
       const progress = currentTime / duration;
       if(progress){
-        this.props.update(e, progress, parseInt(duration - currentTime));
+        this.props.update(e, progress, parseInt(duration - currentTime, 10));
       }
     });
   }

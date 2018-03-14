@@ -1,17 +1,17 @@
-import musicdata from '../assets/musicdata.json';
+import musicData from '../assets/musicdata.json';
 import { createStore } from 'redux';
 import $ from 'jquery';
 import 'jplayer';
 import timeTrans from '../utils/timeTrans'
 
 function musicinfo(state = {
-  musicdata,
+  musicdata: musicData,
   currentMusic: 0,
   isPlaying: false,
   volume: 0.5,
   progress: 0,
   mode: 0, //0:顺序循环，1：随机循环，2：单曲循环
-  total: musicdata.length,
+  total: musicData.length,
   timeSurplus: "0:00",
   duration: 0
 }, action) {
@@ -19,12 +19,9 @@ function musicinfo(state = {
   const musicdata = state.musicdata;
   const currentMusic = state.currentMusic;
   const isPlaying = state.isPlaying;
-  const volume = state.volume;
-  const progress = state.progress;
   const total = state.total;
   const mode = state.mode;
   const duration = state.duration;
-  const timeSurplus = state.timeSurplus;
 
   switch (action.type) {
     case 'MUSIC_NEXT':
