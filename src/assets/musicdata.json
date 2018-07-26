@@ -180,5 +180,26 @@
     "imgurl": "https://img1.zain.red/music/26.jpg",
     "title": "半壶纱",
     "artist": "刘珂矣"
+  },
+  {
+    "id": 27,
+    "url": "http://ov4zgil7v.bkt.clouddn.com/music27.mp3",
+    "imgurl": "https://img1.zain.red/music/27.jpg",
+    "title": "借我",
+    "artist": "谢春花"
+  },
+  {
+    "id": 28,
+    "url": "http://ov4zgil7v.bkt.clouddn.com/music28.mp3",
+    "imgurl": "https://img1.zain.red/music/28.jpg",
+    "title": "山鬼",
+    "artist": "Winky诗"
+  },
+  {
+    "id": 29,
+    "url": "http://ov4zgil7v.bkt.clouddn.com/music29.mp3",
+    "imgurl": "https://img1.zain.red/music/29.jpg",
+    "title": "不老梦",
+    "artist": "银临"
   }
 ]
